@@ -12,7 +12,7 @@ ember install ember-cli-instant2fa
 
 Use the `instant2fa-page` component in your template to register the hosted settings page.
 
-```
+```hbs
 # instant2fa-settings.hbs
 
 {{instant2fa-page uri=uri}}
@@ -22,7 +22,7 @@ Use the `instant2fa-page` component in your template to register the hosted sett
 
 Use the `instant2fa-page` component in your template to register the hosted verification page.
 
-```
+```hbs
 # instant2fa-verification.hbs
 
 {{instant2fa-page uri=uri onEvent=(action "onEvent")}}
@@ -30,7 +30,7 @@ Use the `instant2fa-page` component in your template to register the hosted veri
 
 Handle the event with the `onEvent` handler to process successful verfications.
 
-```
+```js
 # instant2fa-verification.js
 
 import Ember from 'ember';
